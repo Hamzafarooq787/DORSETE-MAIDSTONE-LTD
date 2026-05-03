@@ -18,22 +18,26 @@ export default function Header() {
   const isActive = (path: string) => pathname === path;
 
   return (
-    <header className="fixed top-0 w-full z-50 bg-white/95 backdrop-blur-sm border-b border-neutral-100 h-24">
-      <div className="flex justify-between items-center px-16 h-full w-full max-w-screen-2xl mx-auto">
-        <Link href="/" className="text-lg font-light tracking-[0.3em] text-neutral-900 uppercase font-headline-md">
+    <header className="fixed top-0 w-full z-50 bg-white/90 backdrop-blur-sm border-b border-neutral-100 h-20 md:h-24">
+      <div className="flex justify-between items-center px-6 md:px-16 h-full w-full max-w-screen-2xl mx-auto">
+        {/* Logo */}
+        <Link
+          href="/"
+          className="text-sm md:text-base font-light tracking-[0.3em] text-neutral-900 uppercase font-sans"
+        >
           DORSETE MAIDSTONE LTD
         </Link>
 
         {/* Desktop Navigation */}
-        <nav className="hidden md:flex items-center space-x-12">
+        <nav className="hidden md:flex items-center space-x-8 lg:space-x-12">
           {navItems.map((item) => (
             <Link
               key={item.path}
               href={item.path}
-              className={`font-manrope tracking-[0.2em] uppercase text-xs font-semibold transition-colors duration-300 ${
+              className={`font-sans tracking-[0.2em] uppercase text-xs font-semibold transition-colors duration-300 ${
                 isActive(item.path)
-                  ? "text-[#bfa05a] border-b border-[#bfa05a] pb-1"
-                  : "text-neutral-500 hover:text-[#bfa05a]"
+                  ? "text-primary border-b border-primary pb-1"
+                  : "text-neutral-500 hover:text-primary"
               }`}
             >
               {item.name}
@@ -41,24 +45,30 @@ export default function Header() {
           ))}
         </nav>
 
-        {/* Mobile button */}
-        <button onClick={() => setMobileOpen(!mobileOpen)} className="md:hidden">
-          <span className="material-symbols-outlined text-neutral-900">menu</span>
+        {/* Mobile menu button */}
+        <button
+          onClick={() => setMobileOpen(!mobileOpen)}
+          className="md:hidden"
+          aria-label="Toggle menu"
+        >
+          <span className="material-symbols-outlined text-neutral-900">
+            {mobileOpen ? "close" : "menu"}
+          </span>
         </button>
       </div>
 
       {/* Mobile menu */}
       {mobileOpen && (
-        <div className="md:hidden bg-white border-t border-neutral-100 px-8 py-6 flex flex-col gap-4">
+        <div className="md:hidden bg-white border-t border-neutral-100 px-6 py-6 flex flex-col gap-3">
           {navItems.map((item) => (
             <Link
               key={item.path}
               href={item.path}
               onClick={() => setMobileOpen(false)}
-              className={`font-manrope tracking-[0.2em] uppercase text-xs font-semibold py-2 ${
+              className={`font-sans tracking-[0.2em] uppercase text-xs font-semibold py-2 ${
                 isActive(item.path)
-                  ? "text-[#bfa05a]"
-                  : "text-neutral-500 hover:text-[#bfa05a]"
+                  ? "text-primary"
+                  : "text-neutral-500 hover:text-primary"
               }`}
             >
               {item.name}
