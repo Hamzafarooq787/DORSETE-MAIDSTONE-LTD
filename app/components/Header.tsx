@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import Image from "next/image";
 
 export default function Header() {
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -20,12 +21,17 @@ export default function Header() {
   return (
     <header className="fixed top-0 w-full z-50 bg-white/90 backdrop-blur-sm border-b border-neutral-100 h-20 md:h-24">
       <div className="flex justify-between items-center px-6 md:px-16 h-full w-full max-w-screen-2xl mx-auto">
-        {/* Logo */}
-        <Link
-          href="/"
-          className="text-sm md:text-base font-light tracking-[0.3em] text-neutral-900 uppercase font-sans"
-        >
-          DORSETE MAIDSTONE LTD
+        
+        {/* Logo Image */}
+        <Link href="/" className="flex items-center">
+          <Image
+            src="/logo1.webp"
+            alt="Dorsete Maidstone Logo"
+            width={180}
+            height={60}
+            priority
+            className="object-contain"
+          />
         </Link>
 
         {/* Desktop Navigation */}
