@@ -10,7 +10,7 @@ export default function AboutPage() {
             alt="Architectural detail"
           />
         </div>
-        <div className="relative z-10 px-6 md:px-16 max-w-4xl">
+        <div className="relative z-10 px-4 sm:px-6 md:px-16 max-w-4xl">
           <span className="text-xs font-semibold uppercase text-primary block mb-6 tracking-[0.3em]">
             About the Studio
           </span>
@@ -26,7 +26,7 @@ export default function AboutPage() {
       </section>
 
       {/* Our Story – responsive two columns */}
-      <section className="py-20 md:py-36 px-6 md:px-16 bg-surface">
+      <section className="py-16 sm:py-20 md:py-36 px-4 sm:px-6 md:px-16 bg-surface">
         <div className="max-w-screen-2xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 items-center">
           <div>
             <span className="text-xs font-semibold uppercase text-primary mb-6 block tracking-wider">
@@ -70,7 +70,7 @@ export default function AboutPage() {
       </section>
 
       {/* Why Choose Us – modern, premium professional section */}
-      <section className="py-20 md:py-36 px-6 md:px-16 bg-surface-container-low">
+      <section className="py-16 sm:py-20 md:py-36 px-4 sm:px-6 md:px-16 bg-surface-container-low">
         <div className="max-w-screen-2xl mx-auto">
           <div className="text-center mb-12 md:mb-20">
             <span className="text-xs font-semibold uppercase text-primary tracking-[0.3em]">
