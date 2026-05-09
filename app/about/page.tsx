@@ -14,7 +14,7 @@ export default function AboutPage() {
           <span className="text-xs font-semibold uppercase text-primary block mb-6 tracking-[0.3em]">
             About the Studio
           </span>
-          <h1 className="text-5xl md:text-7xl text-on-surface leading-tight font-light">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-on-surface leading-tight font-light">
             Crafting Legacy
           </h1>
           <p className="text-lg md:text-xl text-secondary mt-6 md:mt-8 max-w-2xl">
@@ -32,7 +32,7 @@ export default function AboutPage() {
             <span className="text-xs font-semibold uppercase text-primary mb-6 block tracking-wider">
               Our Story
             </span>
-            <h2 className="text-4xl md:text-5xl font-medium mb-6">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-medium mb-6">
               From Humble Beginnings
             </h2>
             <p className="text-lg text-secondary mb-6">
@@ -69,109 +69,122 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Leadership Team – responsive grid */}
+      {/* Why Choose Us – modern, premium professional section */}
       <section className="py-20 md:py-36 px-6 md:px-16 bg-surface-container-low">
         <div className="max-w-screen-2xl mx-auto">
-          <div className="text-center mb-12 md:mb-16">
-            <span className="text-xs font-semibold uppercase text-primary tracking-wider">
-              The Minds Behind
+          <div className="text-center mb-12 md:mb-20">
+            <span className="text-xs font-semibold uppercase text-primary tracking-[0.3em]">
+              The Dorsete Standard
             </span>
-            <h2 className="text-4xl md:text-5xl font-medium mt-4">
-              Leadership Team
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-medium mt-4">
+              Why Discerning Clients Choose Us
             </h2>
             <div className="w-16 h-0.5 bg-primary-container mx-auto mt-6"></div>
+            <p className="text-base md:text-lg text-secondary max-w-2xl mx-auto mt-6 md:mt-8">
+              A construction practice built on uncompromising standards, delivering
+              measurable excellence on every commission.
+            </p>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12">
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
             {[
               {
-                name: "Jonathan Dorsete",
-                role: "Founding Partner",
-                desc: "Structural engineer with 30+ years in high-end residential.",
-                img: "https://picsum.photos/id/64/600/600",
+                icon: "verified",
+                stat: "25+",
+                title: "Years of Mastery",
+                desc: "Over two decades refining the craft of luxury construction across the United Kingdom.",
               },
               {
-                name: "Eleanor Maidstone",
-                role: "Creative Director",
-                desc: "RIBA award-winning architect focused on minimalist expression.",
-                img: "https://picsum.photos/id/65/600/600",
+                icon: "domain",
+                stat: "180+",
+                title: "Projects Delivered",
+                desc: "From private estates to landmark commercial developments, completed on time and on budget.",
               },
               {
-                name: "Samuel K. Harris",
-                role: "Head of Construction",
-                desc: "Expert in sustainable materials and project delivery.",
-                img: "https://picsum.photos/id/66/600/600",
+                icon: "workspace_premium",
+                stat: "12",
+                title: "Industry Awards",
+                desc: "Recognised by RIBA, BD and Dezeen for design integrity and structural excellence.",
               },
-            ].map((member, idx) => (
-              <div key={idx} className="text-center group">
-                <div className="aspect-square rounded-full overflow-hidden mx-auto w-36 sm:w-44 md:w-48 mb-4 md:mb-6 shadow-md">
-                  <img
-                    src={member.img}
-                    alt={member.name}
-                    className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
-                  />
+              {
+                icon: "eco",
+                stat: "100%",
+                title: "Sustainable Sites",
+                desc: "Every project is delivered with low‑carbon materials and waste‑reduction protocols.",
+              },
+            ].map((item, idx) => (
+              <div
+                key={idx}
+                className="group relative bg-surface p-8 md:p-10 border border-neutral-200/70 hover:border-primary-container transition-all duration-500 hover:shadow-xl"
+              >
+                <span
+                  className="material-symbols-outlined text-4xl md:text-5xl text-primary-container group-hover:text-primary transition-colors"
+                  style={{ fontVariationSettings: "'FILL' 0" }}
+                >
+                  {item.icon}
+                </span>
+                <div className="mt-6 mb-2 text-4xl md:text-5xl font-light text-on-surface">
+                  {item.stat}
                 </div>
-                <h3 className="text-xl md:text-2xl font-medium">
-                  {member.name}
+                <h3 className="text-lg md:text-xl font-medium text-on-surface">
+                  {item.title}
                 </h3>
-                <p className="text-primary text-xs font-semibold uppercase mt-1 tracking-wider">
-                  {member.role}
+                <p className="text-secondary text-sm md:text-base mt-3 leading-relaxed">
+                  {item.desc}
                 </p>
-                <p className="text-secondary text-base md:text-lg mt-2 md:mt-3 max-w-xs mx-auto px-2">
-                  {member.desc}
-                </p>
+                <div className="absolute bottom-0 left-0 h-0.5 w-0 bg-primary-container group-hover:w-full transition-all duration-500"></div>
               </div>
             ))}
+          </div>
+
+          <div className="mt-16 md:mt-24 grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+            <div className="aspect-[4/3] overflow-hidden bg-surface-dim shadow-xl order-2 lg:order-1">
+              <img
+                className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
+                src="https://picsum.photos/id/1048/900/700"
+                alt="Construction excellence"
+              />
+            </div>
+            <div className="order-1 lg:order-2">
+              <span className="text-xs font-semibold uppercase text-primary tracking-[0.3em]">
+                Our Commitment
+              </span>
+              <h3 className="text-3xl md:text-4xl font-medium mt-4 mb-6">
+                Built to a Higher Standard
+              </h3>
+              <div className="w-12 h-0.5 bg-primary-container mb-6"></div>
+              <p className="text-base md:text-lg text-secondary mb-6 leading-relaxed">
+                Every Dorsete Maidstone project is overseen by a senior partner from
+                first sketch to final handover. Our commitment to transparent
+                reporting, fixed‑price guarantees, and meticulous quality control is
+                what allows us to stand behind every structure we complete.
+              </p>
+              <ul className="space-y-3 md:space-y-4 text-secondary">
+                {[
+                  "Single point of senior accountability on every commission",
+                  "Fixed‑price contracts with transparent reporting",
+                  "ISO‑certified quality and safety management",
+                  "10‑year structural warranty on all completed works",
+                ].map((point, i) => (
+                  <li key={i} className="flex gap-3 items-start">
+                    <span className="material-symbols-outlined text-primary text-base mt-0.5">
+                      check_circle
+                    </span>
+                    <span className="text-base md:text-lg">{point}</span>
+                  </li>
+                ))}
+              </ul>
+              <a
+                href="/contact"
+                className="inline-block mt-8 md:mt-10 px-8 py-4 bg-primary-container text-white text-xs font-semibold uppercase tracking-[0.2em] hover:bg-primary transition-colors"
+              >
+                Discuss Your Project
+              </a>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* Milestones Timeline – responsive */}
-      <section className="py-20 md:py-36 px-6 md:px-16 bg-surface">
-        <div className="max-w-4xl mx-auto">
-          <div className="text-center mb-12 md:mb-16">
-            <span className="text-xs font-semibold uppercase text-primary tracking-wider">
-              Journey
-            </span>
-            <h2 className="text-4xl md:text-5xl font-medium mt-4">
-              Key Milestones
-            </h2>
-            <div className="w-16 h-0.5 bg-primary-container mx-auto mt-6"></div>
-          </div>
-          <div className="space-y-8 md:space-y-12">
-            {[
-              { year: "1998", title: "Foundation", desc: "Dorsete Ltd established in Stoke-on-Trent." },
-              { year: "2005", title: "First Major Commission", desc: "Completed the Grade-II listed conversion project." },
-              { year: "2012", title: "London Expansion", desc: "Opened London office; delivered first luxury tower." },
-              { year: "2020", title: "Sustainability Pledge", desc: "Committed to carbon-neutral construction by 2030." },
-            ].map((milestone, idx) => (
-              <div key={idx} className="flex flex-col md:flex-row gap-4 md:gap-6 items-start border-l-2 border-primary-container pl-6 md:pl-8 pb-6 md:pb-8">
-                <div className="md:w-32 flex-shrink-0">
-                  <span className="text-3xl md:text-5xl text-primary-container font-light">
-                    {milestone.year}
-                  </span>
-                </div>
-                <div>
-                  <h3 className="text-xl md:text-2xl font-medium mb-1 md:mb-2">
-                    {milestone.title}
-                  </h3>
-                  <p className="text-secondary text-base md:text-lg">{milestone.desc}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-          <div className="mt-12 md:mt-16 p-6 md:p-8 bg-surface-container-low text-center">
-            <p className="text-lg md:text-xl italic">
-              “Our story is still being written. Join us for the next chapter.”
-            </p>
-            <a
-              href="#contact"
-              className="inline-block mt-6 px-6 md:px-8 py-3 bg-primary-container text-white text-xs font-semibold uppercase tracking-wider hover:bg-primary transition-colors"
-            >
-              Contact the studio
-            </a>
-          </div>
-        </div>
-      </section>
     </>
   );
 }
