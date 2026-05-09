@@ -14,7 +14,7 @@ export default function ContactPage() {
           <span className="text-xs font-semibold uppercase text-primary block mb-6 tracking-[0.3em]">
             Establishment
           </span>
-          <h1 className="text-5xl md:text-7xl text-on-surface leading-tight font-light">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-on-surface leading-tight font-light">
             Dorsete <br />
             Maidstone LTD
           </h1>
@@ -32,7 +32,7 @@ export default function ContactPage() {
             <span className="text-xs font-semibold uppercase text-primary mb-6 md:mb-8 tracking-wider">
               Contact
             </span>
-            <h2 className="text-4xl md:text-5xl text-on-surface mb-8 md:mb-12 font-medium">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl text-on-surface mb-8 md:mb-12 font-medium">
               Studio &<br />
               Inquiries
             </h2>
@@ -77,25 +77,24 @@ export default function ContactPage() {
       {/* Map / Location Detail Section */}
       <section className="w-full bg-neutral-50 py-20 md:py-36">
         <div className="max-w-screen-2xl mx-auto px-6 md:px-16">
-          <div className="relative w-full aspect-[21/9] overflow-hidden rounded-lg bg-white shadow-sm border border-neutral-200">
-            <img
-              className="w-full h-full object-cover grayscale opacity-40 mix-blend-multiply"
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuBP8_cXyMtvgcDmqGgYBU8aAxQEcQNOOkR2o76XeGkFCURmF3L4uh1wUmoU1odob4FdTeUrKud2E-4KMlYbDrYLxW-LOL-Bf1Dbw3zDeBmifmXyH9EqbPHWiocfRM8nWHt-Qnznq5Mg5OkrbNt_H9ohNx2IdQiUp4GiBR1rmwdnZnefnTl_848u1UzNvpLHoEwJM5MPrssam0O23kE7sXy_9dLUSgSuo0nTkoJIaUY426HBxTuOfQqjwuOl9gh6vWirXL5snj8q-ig"
-              alt="Location reference"
+          <div className="text-center mb-10 md:mb-14">
+            <span className="text-xs font-semibold uppercase text-primary tracking-[0.3em]">
+              Find Us
+            </span>
+            <h2 className="text-3xl sm:text-4xl md:text-5xl text-on-surface mt-4 font-medium">
+              Stoke‑on‑Trent HQ
+            </h2>
+            <div className="w-16 h-0.5 bg-primary-container mx-auto mt-6"></div>
+          </div>
+          <div className="relative w-full aspect-[16/10] sm:aspect-[16/9] md:aspect-[21/9] overflow-hidden rounded-2xl bg-white shadow-md border border-neutral-200">
+            <iframe
+              title="Dorsete Maidstone Ltd – 284 High Street, Stoke‑on‑Trent, ST6 5TY"
+              src="https://www.google.com/maps?q=284+High+Street,+Stoke-on-Trent,+ST6+5TY&output=embed"
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              className="w-full h-full border-0"
+              allowFullScreen
             />
-            <div className="absolute inset-0 flex items-center justify-center p-4">
-              <div className="bg-white/90 backdrop-blur-md px-8 md:px-12 py-6 md:py-8 border border-neutral-100 shadow-xl flex flex-col items-center">
-                <span
-                  className="material-symbols-outlined text-primary text-3xl md:text-4xl mb-1 md:mb-2"
-                  style={{ fontVariationSettings: "'FILL' 1" }}
-                >
-                  location_on
-                </span>
-                <span className="text-xs font-semibold uppercase text-on-surface tracking-wider">
-                  STOKE-ON-TRENT HQ
-                </span>
-              </div>
-            </div>
           </div>
         </div>
       </section>

@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function ServicesPage() {
   return (
     <>
@@ -14,7 +16,7 @@ export default function ServicesPage() {
           <span className="text-xs font-semibold uppercase text-primary block mb-6 tracking-[0.3em]">
             Our Expertise
           </span>
-          <h1 className="text-5xl md:text-7xl text-on-surface leading-tight font-light">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-on-surface leading-tight font-light">
             Precision in Every <br />
             <span className="text-primary italic">Structural Detail</span>
           </h1>
@@ -51,12 +53,15 @@ export default function ServicesPage() {
                 high-end private residences and exclusive multi-unit
                 developments.
               </p>
-              <div className="pt-3 md:pt-4 flex items-center gap-2 text-primary text-[10px] font-semibold uppercase tracking-widest group-hover:gap-4 transition-all duration-300">
-                View Portfolio
+              <Link
+                href="/contact"
+                className="pt-3 md:pt-4 inline-flex items-center gap-2 text-primary text-[10px] font-semibold uppercase tracking-widest group-hover:gap-4 transition-all duration-300 hover:text-primary-container"
+              >
+                Enquire Now
                 <span className="material-symbols-outlined text-sm">
                   arrow_forward
                 </span>
-              </div>
+              </Link>
             </div>
           </div>
 
@@ -81,12 +86,15 @@ export default function ServicesPage() {
                 commercial projects focus on operational efficiency,
                 architectural branding, and uncompromising durability.
               </p>
-              <div className="pt-3 md:pt-4 flex items-center gap-2 text-primary text-[10px] font-semibold uppercase tracking-widest group-hover:gap-4 transition-all duration-300">
-                View Portfolio
+              <Link
+                href="/contact"
+                className="pt-3 md:pt-4 inline-flex items-center gap-2 text-primary text-[10px] font-semibold uppercase tracking-widest group-hover:gap-4 transition-all duration-300 hover:text-primary-container"
+              >
+                Enquire Now
                 <span className="material-symbols-outlined text-sm">
                   arrow_forward
                 </span>
-              </div>
+              </Link>
             </div>
           </div>
 
@@ -111,12 +119,15 @@ export default function ServicesPage() {
                 design phase integrates aesthetic elegance with technical
                 feasibility, ensuring every line serves a purpose.
               </p>
-              <div className="pt-3 md:pt-4 flex items-center gap-2 text-primary text-[10px] font-semibold uppercase tracking-widest group-hover:gap-4 transition-all duration-300">
-                View Portfolio
+              <Link
+                href="/contact"
+                className="pt-3 md:pt-4 inline-flex items-center gap-2 text-primary text-[10px] font-semibold uppercase tracking-widest group-hover:gap-4 transition-all duration-300 hover:text-primary-container"
+              >
+                Enquire Now
                 <span className="material-symbols-outlined text-sm">
                   arrow_forward
                 </span>
-              </div>
+              </Link>
             </div>
           </div>
 
@@ -141,12 +152,15 @@ export default function ServicesPage() {
                 act as the single point of accountability, protecting your
                 investment and ensuring deadlines are met with precision.
               </p>
-              <div className="pt-3 md:pt-4 flex items-center gap-2 text-primary text-[10px] font-semibold uppercase tracking-widest group-hover:gap-4 transition-all duration-300">
-                View Portfolio
+              <Link
+                href="/contact"
+                className="pt-3 md:pt-4 inline-flex items-center gap-2 text-primary text-[10px] font-semibold uppercase tracking-widest group-hover:gap-4 transition-all duration-300 hover:text-primary-container"
+              >
+                Enquire Now
                 <span className="material-symbols-outlined text-sm">
                   arrow_forward
                 </span>
-              </div>
+              </Link>
             </div>
           </div>
         </div>
@@ -155,7 +169,7 @@ export default function ServicesPage() {
       {/* Callout Section */}
       <section className="bg-surface-container-low py-20 md:py-36 px-6 md:px-16 text-center">
         <div className="max-w-2xl mx-auto space-y-6 md:space-y-8">
-          <h2 className="text-4xl md:text-5xl text-on-surface font-medium">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl text-on-surface font-medium">
             Committed to Legacy
           </h2>
           <div className="w-12 h-px bg-primary mx-auto"></div>
@@ -164,6 +178,14 @@ export default function ServicesPage() {
             construction is an art of permanence. We build for the next
             generation.
           </p>
+          <div className="pt-4">
+            <Link
+              href="/contact"
+              className="inline-block px-8 md:px-12 py-4 md:py-5 bg-primary-container text-white text-xs font-semibold uppercase tracking-[0.2em] hover:bg-primary transition-colors"
+            >
+              Start a Conversation
+            </Link>
+          </div>
         </div>
       </section>
     </>

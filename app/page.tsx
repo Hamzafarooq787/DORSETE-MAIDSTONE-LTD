@@ -1,8 +1,10 @@
+import Link from "next/link";
+
 export default function HomePage() {
   return (
     <>
-      {/* Hero Section (unchanged) */}
-      <section className="relative h-screen w-full mt-8 flex items-center justify-center overflow-hidden">
+      {/* Hero Section */}
+      <section className="relative min-h-screen w-full pt-28 md:pt-32 pb-16 flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img
             className="w-full h-full object-cover brightness-[0.85] saturate-[1.05]"
@@ -17,17 +19,26 @@ export default function HomePage() {
               Premier Development
             </span>
           </div>
-          <h1 className="text-7xl md:text-7xl text-white leading-tight drop-shadow-lg [text-shadow:0_4px_20px_rgba(0,0,0,0.3)] font-light">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-white leading-tight drop-shadow-lg [text-shadow:0_4px_20px_rgba(0,0,0,0.3)] font-light">
             REDEFINING <br />
             <span className="italic font-light text-primary-container drop-shadow-md">
               ARCHITECTURAL
             </span> <br />
             EXCELLENCE
           </h1>
-          <div className="mt-10">
-            <button className="bg-primary-container text-white px-12 py-5 text-xs font-semibold uppercase tracking-[0.2em] hover:bg-primary hover:scale-105 transition-all duration-300 shadow-xl border border-white/20">
+          <div className="mt-8 md:mt-10 flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <Link
+              href="/services"
+              className="bg-primary-container text-white px-8 sm:px-12 py-4 sm:py-5 text-xs font-semibold uppercase tracking-[0.2em] hover:bg-primary hover:scale-105 transition-all duration-300 shadow-xl border border-white/20"
+            >
               View Portfolio
-            </button>
+            </Link>
+            <Link
+              href="/contact"
+              className="bg-white/10 backdrop-blur-sm text-white px-8 sm:px-12 py-4 sm:py-5 text-xs font-semibold uppercase tracking-[0.2em] hover:bg-white/20 transition-all duration-300 border border-white/30"
+            >
+              Get in Touch
+            </Link>
           </div>
         </div>
       </section>
@@ -37,7 +48,7 @@ export default function HomePage() {
         <div className="px-6 md:px-16 max-w-screen-2xl mx-auto">
           <div className="grid grid-cols-12 gap-8">
             <div className="col-span-12 md:col-span-5 space-y-12">
-              <h2 className="text-5xl md:text-5xl text-on-surface font-medium">The Art of Precision</h2>
+              <h2 className="text-3xl sm:text-4xl md:text-5xl text-on-surface font-medium">The Art of Precision</h2>
               <div className="w-24 h-1 bg-primary-container"></div>
             </div>
             <div className="col-span-12 md:col-span-7">
@@ -78,7 +89,7 @@ export default function HomePage() {
       <section className="py-20 md:py-40 bg-neutral-50">
         <div className="px-6 md:px-16 max-w-4xl mx-auto text-center space-y-12">
           <span className="material-symbols-outlined text-4xl text-primary-container" style={{ fontVariationSettings: "'FILL' 1" }}>format_quote</span>
-          <blockquote className="text-5xl md:text-7xl text-on-surface italic font-light leading-tight">
+          <blockquote className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl text-on-surface italic font-light leading-tight">
             “We do not build houses; we curate experiences that stand the test of time.”
           </blockquote>
           <p className="text-xs font-semibold tracking-[0.3em] text-primary uppercase">— Managing Director</p>
@@ -90,7 +101,7 @@ export default function HomePage() {
         <div className="px-6 md:px-16 max-w-screen-2xl mx-auto">
           <div className="text-center mb-20">
             <span className="text-xs font-semibold uppercase text-primary tracking-wider">Foundations</span>
-            <h2 className="text-5xl md:text-5xl text-on-surface mt-4 font-medium">Three Pillars of Excellence</h2>
+            <h2 className="text-3xl sm:text-4xl md:text-5xl text-on-surface mt-4 font-medium">Three Pillars of Excellence</h2>
             <div className="w-20 h-0.5 bg-primary-container mx-auto mt-6"></div>
           </div>
           <div className="grid md:grid-cols-3 gap-12">
@@ -113,7 +124,7 @@ export default function HomePage() {
       <section className="py-20 md:py-40 bg-neutral-50">
         <div className="px-6 md:px-16 max-w-screen-2xl mx-auto text-center">
           <span className="text-xs font-semibold uppercase text-primary tracking-wider">Recognition</span>
-          <h2 className="text-5xl md:text-5xl text-on-surface mt-4 font-medium">Accolades & Publications</h2>
+          <h2 className="text-3xl sm:text-4xl md:text-5xl text-on-surface mt-4 font-medium">Accolades & Publications</h2>
           <div className="flex flex-wrap justify-center gap-12 mt-16">
             {["RIBA Award 2023", "BD Architect of Year", "FT ‘Top 50 Builders’", "Dezeen Featured"].map((award, idx) => (
               <div key={idx} className="border border-primary-container/30 px-8 py-4 text-primary-container font-semibold tracking-wide">{award}</div>
@@ -128,7 +139,7 @@ export default function HomePage() {
         <div className="px-6 md:px-16 max-w-screen-2xl mx-auto grid md:grid-cols-2 gap-16 items-center">
           <div>
             <span className="text-xs font-semibold uppercase text-primary tracking-wider">Future‑ready</span>
-            <h2 className="text-5xl md:text-5xl text-on-surface mt-4 font-medium">Building with Conscience</h2>
+            <h2 className="text-3xl sm:text-4xl md:text-5xl text-on-surface mt-4 font-medium">Building with Conscience</h2>
             <div className="w-16 h-0.5 bg-primary-container mt-6 mb-8"></div>
             <p className="text-secondary text-lg mb-6">We integrate passive solar design, green roofs, and high‑performance glazing into every project...</p>
             <ul className="space-y-3 text-secondary">
@@ -148,7 +159,7 @@ export default function HomePage() {
         <div className="px-6 md:px-16 max-w-3xl mx-auto">
           <div className="text-center mb-16">
             <span className="text-xs font-semibold uppercase text-primary tracking-wider">Answers</span>
-            <h2 className="text-5xl md:text-5xl text-on-surface mt-2 font-medium">Frequently Asked Questions</h2>
+            <h2 className="text-3xl sm:text-4xl md:text-5xl text-on-surface mt-2 font-medium">Frequently Asked Questions</h2>
             <div className="w-16 h-0.5 bg-primary-container mx-auto mt-4"></div>
           </div>
           <div className="space-y-6">
