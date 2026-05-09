@@ -12,7 +12,7 @@ export default function ServicesPage() {
             alt="Architectural detail"
           />
         </div>
-        <div className="relative z-10 px-6 md:px-16 max-w-4xl">
+        <div className="relative z-10 px-4 sm:px-6 md:px-16 max-w-4xl">
           <span className="text-xs font-semibold uppercase text-primary block mb-6 tracking-[0.3em]">
             Our Expertise
           </span>
@@ -29,7 +29,7 @@ export default function ServicesPage() {
       </section>
 
       {/* Services Grid – responsive layout */}
-      <section className="px-6 md:px-16 pb-20 md:pb-36 max-w-screen-2xl mx-auto">
+      <section className="px-4 sm:px-6 md:px-16 pb-16 sm:pb-20 md:pb-36 max-w-screen-2xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-y-16 md:gap-y-32 gap-x-12">
           {/* Residential Development */}
           <div className="group cursor-default">
@@ -44,7 +44,7 @@ export default function ServicesPage() {
               <p className="text-xs font-semibold uppercase text-secondary tracking-wider">
                 ESTATES & LUXURY HOMES
               </p>
-              <h3 className="text-3xl md:text-4xl text-on-surface group-hover:text-primary transition-colors duration-300 font-medium">
+              <h3 className="text-2xl sm:text-3xl md:text-4xl text-on-surface group-hover:text-primary transition-colors duration-300 font-medium">
                 Residential Development
               </h3>
               <p className="text-base text-secondary max-w-lg leading-relaxed">
@@ -66,7 +66,7 @@ export default function ServicesPage() {
           </div>
 
           {/* Commercial Construction */}
-          <div className="group cursor-default md:mt-40">
+          <div className="group cursor-default md:mt-24 lg:mt-40">
             <div className="aspect-[16/10] overflow-hidden bg-neutral-100 mb-6 md:mb-8">
               <img
                 className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700 ease-in-out scale-100 group-hover:scale-105"
@@ -78,7 +78,7 @@ export default function ServicesPage() {
               <p className="text-xs font-semibold uppercase text-secondary tracking-wider">
                 CORPORATE & RETAIL
               </p>
-              <h3 className="text-3xl md:text-4xl text-on-surface group-hover:text-primary transition-colors duration-300 font-medium">
+              <h3 className="text-2xl sm:text-3xl md:text-4xl text-on-surface group-hover:text-primary transition-colors duration-300 font-medium">
                 Commercial Construction
               </h3>
               <p className="text-base text-secondary max-w-lg leading-relaxed">
@@ -111,7 +111,7 @@ export default function ServicesPage() {
               <p className="text-xs font-semibold uppercase text-secondary tracking-wider">
                 BLUEPRINT & CONCEPT
               </p>
-              <h3 className="text-3xl md:text-4xl text-on-surface group-hover:text-primary transition-colors duration-300 font-medium">
+              <h3 className="text-2xl sm:text-3xl md:text-4xl text-on-surface group-hover:text-primary transition-colors duration-300 font-medium">
                 Architectural Design
               </h3>
               <p className="text-base text-secondary max-w-lg leading-relaxed">
@@ -132,7 +132,7 @@ export default function ServicesPage() {
           </div>
 
           {/* Project Management */}
-          <div className="group cursor-default md:mt-40">
+          <div className="group cursor-default md:mt-24 lg:mt-40">
             <div className="aspect-[16/10] overflow-hidden bg-neutral-100 mb-6 md:mb-8">
               <img
                 className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700 ease-in-out scale-100 group-hover:scale-105"
@@ -144,7 +144,7 @@ export default function ServicesPage() {
               <p className="text-xs font-semibold uppercase text-secondary tracking-wider">
                 OVERSIGHT & DELIVERY
               </p>
-              <h3 className="text-3xl md:text-4xl text-on-surface group-hover:text-primary transition-colors duration-300 font-medium">
+              <h3 className="text-2xl sm:text-3xl md:text-4xl text-on-surface group-hover:text-primary transition-colors duration-300 font-medium">
                 Project Management
               </h3>
               <p className="text-base text-secondary max-w-lg leading-relaxed">
@@ -167,7 +167,7 @@ export default function ServicesPage() {
       </section>
 
       {/* Callout Section */}
-      <section className="bg-surface-container-low py-20 md:py-36 px-6 md:px-16 text-center">
+      <section className="bg-surface-container-low py-16 sm:py-20 md:py-36 px-4 sm:px-6 md:px-16 text-center">
         <div className="max-w-2xl mx-auto space-y-6 md:space-y-8">
           <h2 className="text-3xl sm:text-4xl md:text-5xl text-on-surface font-medium">
             Committed to Legacy

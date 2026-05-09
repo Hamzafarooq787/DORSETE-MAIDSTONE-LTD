@@ -10,7 +10,7 @@ export default function ContactPage() {
             alt="Architectural detail"
           />
         </div>
-        <div className="relative z-10 px-6 md:px-16 max-w-4xl">
+        <div className="relative z-10 px-4 sm:px-6 md:px-16 max-w-4xl">
           <span className="text-xs font-semibold uppercase text-primary block mb-6 tracking-[0.3em]">
             Establishment
           </span>
@@ -26,7 +26,7 @@ export default function ContactPage() {
       </section>
 
       {/* Contact Information Section – responsive grid */}
-      <section className="max-w-screen-2xl mx-auto px-6 md:px-16 py-20 md:py-36">
+      <section className="max-w-screen-2xl mx-auto px-4 sm:px-6 md:px-16 py-16 sm:py-20 md:py-36">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 md:gap-16">
           <div className="lg:col-span-5 flex flex-col justify-start">
             <span className="text-xs font-semibold uppercase text-primary mb-6 md:mb-8 tracking-wider">
@@ -42,7 +42,7 @@ export default function ContactPage() {
               <span className="text-xs font-semibold uppercase text-neutral-400 block mb-3 md:mb-4 tracking-wider">
                 Location
               </span>
-              <p className="text-2xl md:text-3xl text-on-surface leading-tight font-medium">
+              <p className="text-xl sm:text-2xl md:text-3xl text-on-surface leading-tight font-medium">
                 284 HIGH STREET,<br />
                 STOKE-ON-TRENT,<br />
                 ST6 5TY
@@ -56,7 +56,7 @@ export default function ContactPage() {
                 className="group inline-flex items-center gap-2 md:gap-4 flex-wrap"
                 href="mailto:sales@dorsetemaidstone.co.uk"
               >
-                <span className="text-2xl md:text-3xl text-primary group-hover:text-primary-container transition-colors duration-300 font-medium break-all">
+                <span className="text-lg sm:text-2xl md:text-3xl text-primary group-hover:text-primary-container transition-colors duration-300 font-medium break-all">
                   sales@dorsetemaidstone.co.uk
                 </span>
                 <span className="material-symbols-outlined text-primary group-hover:translate-x-2 transition-transform duration-300">
@@ -75,8 +75,8 @@ export default function ContactPage() {
       </section>
 
       {/* Map / Location Detail Section */}
-      <section className="w-full bg-neutral-50 py-20 md:py-36">
-        <div className="max-w-screen-2xl mx-auto px-6 md:px-16">
+      <section className="w-full bg-neutral-50 py-16 sm:py-20 md:py-36">
+        <div className="max-w-screen-2xl mx-auto px-4 sm:px-6 md:px-16">
           <div className="text-center mb-10 md:mb-14">
             <span className="text-xs font-semibold uppercase text-primary tracking-[0.3em]">
               Find Us

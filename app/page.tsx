@@ -44,18 +44,18 @@ export default function HomePage() {
       </section>
 
       {/* Intro Section – no white */}
-      <section className="py-20 md:py-40 bg-[#EAEAEA]">
-        <div className="px-6 md:px-16 max-w-screen-2xl mx-auto">
-          <div className="grid grid-cols-12 gap-8">
-            <div className="col-span-12 md:col-span-5 space-y-12">
+      <section className="py-16 sm:py-20 md:py-40 bg-[#EAEAEA]">
+        <div className="px-4 sm:px-6 md:px-16 max-w-screen-2xl mx-auto">
+          <div className="grid grid-cols-12 gap-6 md:gap-8">
+            <div className="col-span-12 md:col-span-5 space-y-8 md:space-y-12">
               <h2 className="text-3xl sm:text-4xl md:text-5xl text-on-surface font-medium">The Art of Precision</h2>
               <div className="w-24 h-1 bg-primary-container"></div>
             </div>
             <div className="col-span-12 md:col-span-7">
-              <p className="text-lg text-secondary leading-relaxed max-w-2xl">
+              <p className="text-base md:text-lg text-secondary leading-relaxed max-w-2xl">
                 DORSETE MAIDSTONE LTD operates at the intersection of heritage craftsmanship and avant‑garde design...
               </p>
-              <p className="text-lg text-secondary leading-relaxed max-w-2xl mt-8">
+              <p className="text-base md:text-lg text-secondary leading-relaxed max-w-2xl mt-6 md:mt-8">
                 From high‑net‑worth private residences to complex commercial developments...
               </p>
             </div>
@@ -64,30 +64,30 @@ export default function HomePage() {
       </section>
 
       {/* Project Preview – no white */}
-      <section className="pb-20 md:pb-40 bg-[#EAEAEA]">
-        <div className="px-6 md:px-16 w-full">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+      <section className="pb-16 sm:pb-20 md:pb-40 bg-[#EAEAEA]">
+        <div className="px-4 sm:px-6 md:px-16 w-full">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
             <div className="group cursor-pointer">
-              <div className="aspect-[4/5] overflow-hidden bg-surface-dim mb-8">
+              <div className="aspect-[4/5] overflow-hidden bg-surface-dim mb-6 md:mb-8">
                 <img className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBLY7Mg1Ywk8GwDyrqDNHez49FnlruZJxit7GG-iUQ3iBDwPwItvDXwPyOVwTopEkVDUVHNB4gCr4Qcwdh-5kW5bw6RyXQ_jHb7YOWxJrSj9WztU1ovz2ZXYi0xpWVfA5S8nwfleP9fVlBz5rcLIEsJhC8JxLR6otKiLcyGnns-Q7j1zjHHs9ljBr7Faoz8vh6ceuwO8q-FhFwnXg9eXGkWotyKkIeQQQgDsaNeJFkmObkuwPvOZYIZsaUsO_Y-bKdGpCpeArYbcMs" alt="Minimalist Interior" />
               </div>
               <span className="text-xs font-semibold uppercase text-primary tracking-wider">Residential / 2024</span>
-              <h3 className="text-3xl md:text-3xl text-on-surface mt-2 group-hover:text-primary transition-colors font-medium">The Obsidian Pavilion</h3>
+              <h3 className="text-2xl sm:text-3xl text-on-surface mt-2 group-hover:text-primary transition-colors font-medium">The Obsidian Pavilion</h3>
             </div>
-            <div className="group cursor-pointer md:mt-32">
-              <div className="aspect-[4/5] overflow-hidden bg-surface-dim mb-8">
+            <div className="group cursor-pointer md:mt-24 lg:mt-32">
+              <div className="aspect-[4/5] overflow-hidden bg-surface-dim mb-6 md:mb-8">
                 <img className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAnpIINgOdq2SA0CWuk9AE7AmK2BedxSJouR9p4PnxwoBQ2VUfU534qD7zv5RBDTqMiPn9TQfoOWmfz1hKJ1qvYKOHru3b_tjX7d1h3oG7vPJ6I0ASQDFnxK4s3UQT0nWJhAS2OUzu8gO0mkLRxgGttJ2uif2U0VKZZnrk1Apoe3q8adtunBcG4RZbOMK9Z7FbmY4xr7UD9NOjh4YjJA4V1iMiMr3hIDdhuJY4g14AKnwnQ8F_4TTDDmhwXf8cl9F1Are4wY26G5UE" alt="Commercial Space" />
               </div>
               <span className="text-xs font-semibold uppercase text-primary tracking-wider">Commercial / 2023</span>
-              <h3 className="text-3xl md:text-3xl text-on-surface mt-2 group-hover:text-primary transition-colors font-medium">Maidstone Plaza</h3>
+              <h3 className="text-2xl sm:text-3xl text-on-surface mt-2 group-hover:text-primary transition-colors font-medium">Maidstone Plaza</h3>
             </div>
           </div>
         </div>
       </section>
 
       {/* Quote Section */}
-      <section className="py-20 md:py-40 bg-neutral-50">
-        <div className="px-6 md:px-16 max-w-4xl mx-auto text-center space-y-12">
+      <section className="py-16 sm:py-20 md:py-40 bg-neutral-50">
+        <div className="px-4 sm:px-6 md:px-16 max-w-4xl mx-auto text-center space-y-12">
           <span className="material-symbols-outlined text-4xl text-primary-container" style={{ fontVariationSettings: "'FILL' 1" }}>format_quote</span>
           <blockquote className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl text-on-surface italic font-light leading-tight">
             “We do not build houses; we curate experiences that stand the test of time.”
@@ -97,14 +97,14 @@ export default function HomePage() {
       </section>
 
       {/* Philosophy – no white */}
-      <section className="py-20 md:py-40 bg-[#EAEAEA]">
-        <div className="px-6 md:px-16 max-w-screen-2xl mx-auto">
-          <div className="text-center mb-20">
+      <section className="py-16 sm:py-20 md:py-40 bg-[#EAEAEA]">
+        <div className="px-4 sm:px-6 md:px-16 max-w-screen-2xl mx-auto">
+          <div className="text-center mb-12 md:mb-20">
             <span className="text-xs font-semibold uppercase text-primary tracking-wider">Foundations</span>
             <h2 className="text-3xl sm:text-4xl md:text-5xl text-on-surface mt-4 font-medium">Three Pillars of Excellence</h2>
             <div className="w-20 h-0.5 bg-primary-container mx-auto mt-6"></div>
           </div>
-          <div className="grid md:grid-cols-3 gap-12">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 md:gap-12">
             {[
               { title: "Material Integrity", desc: "We source only the finest, most durable materials...", icon: "handshake" },
               { title: "Design Precision", desc: "Every angle, joint, and finish is modelled in 3D...", icon: "draw" },
@@ -121,13 +121,13 @@ export default function HomePage() {
       </section>
 
       {/* Awards – no white */}
-      <section className="py-20 md:py-40 bg-neutral-50">
-        <div className="px-6 md:px-16 max-w-screen-2xl mx-auto text-center">
+      <section className="py-16 sm:py-20 md:py-40 bg-neutral-50">
+        <div className="px-4 sm:px-6 md:px-16 max-w-screen-2xl mx-auto text-center">
           <span className="text-xs font-semibold uppercase text-primary tracking-wider">Recognition</span>
           <h2 className="text-3xl sm:text-4xl md:text-5xl text-on-surface mt-4 font-medium">Accolades & Publications</h2>
-          <div className="flex flex-wrap justify-center gap-12 mt-16">
+          <div className="flex flex-wrap justify-center gap-4 sm:gap-6 md:gap-12 mt-10 md:mt-16">
             {["RIBA Award 2023", "BD Architect of Year", "FT ‘Top 50 Builders’", "Dezeen Featured"].map((award, idx) => (
-              <div key={idx} className="border border-primary-container/30 px-8 py-4 text-primary-container font-semibold tracking-wide">{award}</div>
+              <div key={idx} className="border border-primary-container/30 px-5 sm:px-8 py-3 sm:py-4 text-sm sm:text-base text-primary-container font-semibold tracking-wide">{award}</div>
             ))}
           </div>
           <p className="text-secondary max-w-2xl mx-auto mt-12">Our work has been featured in Architectural Digest, Wallpaper*, and The Times.</p>
@@ -135,13 +135,13 @@ export default function HomePage() {
       </section>
 
       {/* Sustainable – no white */}
-      <section className="py-20 md:py-40 bg-[#EAEAEA]">
-        <div className="px-6 md:px-16 max-w-screen-2xl mx-auto grid md:grid-cols-2 gap-16 items-center">
+      <section className="py-16 sm:py-20 md:py-40 bg-[#EAEAEA]">
+        <div className="px-4 sm:px-6 md:px-16 max-w-screen-2xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 items-center">
           <div>
             <span className="text-xs font-semibold uppercase text-primary tracking-wider">Future‑ready</span>
             <h2 className="text-3xl sm:text-4xl md:text-5xl text-on-surface mt-4 font-medium">Building with Conscience</h2>
             <div className="w-16 h-0.5 bg-primary-container mt-6 mb-8"></div>
-            <p className="text-secondary text-lg mb-6">We integrate passive solar design, green roofs, and high‑performance glazing into every project...</p>
+            <p className="text-secondary text-base md:text-lg mb-6">We integrate passive solar design, green roofs, and high‑performance glazing into every project...</p>
             <ul className="space-y-3 text-secondary">
               <li className="flex gap-2"><span className="text-primary">✓</span> Carbon‑neutral concrete options</li>
               <li className="flex gap-2"><span className="text-primary">✓</span> Smart building automation ready</li>
@@ -155,8 +155,8 @@ export default function HomePage() {
       </section>
 
       {/* FAQ – no white */}
-      <section className="py-20 md:py-40 bg-neutral-50">
-        <div className="px-6 md:px-16 max-w-3xl mx-auto">
+      <section className="py-16 sm:py-20 md:py-40 bg-neutral-50">
+        <div className="px-4 sm:px-6 md:px-16 max-w-3xl mx-auto">
           <div className="text-center mb-16">
             <span className="text-xs font-semibold uppercase text-primary tracking-wider">Answers</span>
             <h2 className="text-3xl sm:text-4xl md:text-5xl text-on-surface mt-2 font-medium">Frequently Asked Questions</h2>
@@ -178,6 +178,14 @@ export default function HomePage() {
                 <p className="text-secondary pb-2 pl-2">{faq.a}</p>
               </details>
             ))}
+          </div>
+          <div className="text-center mt-12 md:mt-16">
+            <Link
+              href="/contact"
+              className="inline-block px-8 md:px-12 py-4 md:py-5 bg-primary-container text-white text-xs font-semibold uppercase tracking-[0.2em] hover:bg-primary transition-colors"
+            >
+              Still have questions? Contact us
+            </Link>
           </div>
         </div>
       </section>
