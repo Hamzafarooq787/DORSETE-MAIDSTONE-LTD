@@ -13,6 +13,28 @@ const manrope = Manrope({
 export const metadata: Metadata = {
   title: "Dorsete Maidstone LTD | Architectural Excellence",
   description: "Premier construction and architectural design. Creating structures that define space with precision.",
+  openGraph: {
+    title: "Dorsete Maidstone LTD | Architectural Excellence",
+    description: "Building Quality. Creating Communities.",
+    url: "https://dorsetemaidstone.co.uk/",
+    siteName: "Dorsete Maidstone LTD",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1350,
+        height: 1125,
+        alt: "Dorsete Maidstone — Building Quality. Creating Communities.",
+      },
+    ],
+    locale: "en_GB",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Dorsete Maidstone LTD | Architectural Excellence",
+    description: "Building Quality. Creating Communities.",
+    images: ["/og-image.png"],
+  },
 };
 
 export default function RootLayout({
