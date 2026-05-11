@@ -19,10 +19,10 @@ export default function Footer() {
         {/* Email */}
         <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-12">
           <a
-            href="mailto:sales@dorsetemaidstone.co.uk"
+            href="mailto:info@dorsetemaidstone.co.uk"
             className="font-sans tracking-widest uppercase text-xs md:text-sm leading-loose text-neutral-800 hover:text-[#952915] transition-all break-all"
           >
-            sales@dorsetemaidstone.co.uk
+            info@dorsetemaidstone.co.uk
           </a>
         </div>
 

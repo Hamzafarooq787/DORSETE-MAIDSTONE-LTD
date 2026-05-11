@@ -168,7 +168,7 @@ export default function HomePage() {
               { q: "How do you ensure design originality?", a: "We never repeat designs. Each project is uniquely crafted to its site, client, and context." },
               { q: "What is your typical project timeline?", a: "Residential: 12–18 months; commercial: 18–30 months." },
               { q: "Do you work with external architects?", a: "Yes, we frequently act as construction partner for leading architectural practices." },
-              { q: "How can I request a consultation?", a: "Email sales@dorsetemaidstone.co.uk or use the contact form on our website." },
+              { q: "How can I request a consultation?", a: "Email info@dorsetemaidstone.co.uk or use the contact form on our website." },
             ].map((faq, idx) => (
               <details key={idx} className="group border-b border-neutral-200 pb-4">
                 <summary className="flex justify-between items-center cursor-pointer list-none py-4 font-semibold text-on-surface">

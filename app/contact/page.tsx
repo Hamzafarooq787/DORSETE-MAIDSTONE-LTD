@@ -54,10 +54,10 @@ export default function ContactPage() {
               </span>
               <a
                 className="group inline-flex items-center gap-2 md:gap-4 flex-wrap"
-                href="mailto:sales@dorsetemaidstone.co.uk"
+                href="mailto:info@dorsetemaidstone.co.uk"
               >
                 <span className="text-lg sm:text-2xl md:text-3xl text-primary group-hover:text-primary-container transition-colors duration-300 font-medium break-all">
-                  sales@dorsetemaidstone.co.uk
+                  info@dorsetemaidstone.co.uk
                 </span>
                 <span className="material-symbols-outlined text-primary group-hover:translate-x-2 transition-transform duration-300">
                   north_east
